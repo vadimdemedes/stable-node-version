@@ -1,0 +1,23 @@
+{
+  "name": "stable-node-version",
+  "version": "1.0.0",
+  "description": "Fetch stable Node.js version",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "vdemedes/stable-node-version",
+  "author": {
+    "name": "Vadim",
+    "email": "vdemedes@gmail.com",
+    "url": "https://github.com/vdemedes"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "got": "^4.2.0",
+    "semver": "^5.0.3"
+  },
+  "devDependencies": {
+    "ava": "*"
+  }
+}
