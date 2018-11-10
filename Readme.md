@@ -15,7 +15,7 @@ $ npm install stable-node-version --save
 ```js
 const fetchStableVersion = require('stable-node-version');
 
-fetchStableVersion().then(function (stableVersion) {
+fetchStableVersion().then(stableVersion => {
   stableVersion === '4.0.0'; // true
 });
 ```
