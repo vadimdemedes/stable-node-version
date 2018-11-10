@@ -1,4 +1,4 @@
-# stable-node-version [![Build Status](https://travis-ci.org/vdemedes/stable-node-version.svg)](https://travis-ci.org/vdemedes/stable-node-version)
+# stable-node-version [![Build Status](https://travis-ci.org/vadimdemedes/stable-node-version.svg?branch=master)](https://travis-ci.org/vadimdemedes/stable-node-version)
 
 Fetch stable Node.js version.
 
@@ -23,7 +23,7 @@ fetchStableVersion().then(stableVersion => {
 
 ### Tests
 
-[![Build Status](https://travis-ci.org/vdemedes/stable-node-version.svg)](https://travis-ci.org/vdemedes/stable-node-version)
+[![Build Status](https://travis-ci.org/vadimdemedes/stable-node-version.svg?branch=master)](https://travis-ci.org/vadimdemedes/stable-node-version)
 
 ```
 $ make test
