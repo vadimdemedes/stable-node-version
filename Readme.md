@@ -19,6 +19,6 @@ const version = await stableNodeVersion();
 
 ## API
 
-### stableNodeVersion
+### stableNodeVersion()
 
 Returns a `Promise` that resolved to a version string.
