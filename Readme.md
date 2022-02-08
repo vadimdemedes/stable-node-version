@@ -1,35 +1,24 @@
-# stable-node-version [![Build Status](https://travis-ci.org/vadimdemedes/stable-node-version.svg?branch=master)](https://travis-ci.org/vadimdemedes/stable-node-version)
+# stable-node-version [![Build Status](https://github.com/vadimdemedes/stable-node-version/workflows/test/badge.svg)](https://github.com/vadimdemedes/stable-node-version/actions)
 
-Fetch stable Node.js version.
+> Fetch stable Node.js version.
 
-
-### Installation
+## Installation
 
 ```
-$ npm install stable-node-version --save
+$ npm install stable-node-version
 ```
 
-
-### Usage
+## Usage
 
 ```js
-const fetchStableVersion = require('stable-node-version');
+import stableNodeVersion from 'stable-node-version';
 
-fetchStableVersion().then(stableVersion => {
-  stableVersion === '4.0.0'; // true
-});
+const version = await stableNodeVersion();
+//=> 16.0.0
 ```
 
+## API
 
-### Tests
+### stableNodeVersion
 
-[![Build Status](https://travis-ci.org/vadimdemedes/stable-node-version.svg?branch=master)](https://travis-ci.org/vadimdemedes/stable-node-version)
-
-```
-$ make test
-```
-
-
-### License
-
-MIT © [vdemedes](https://github.com/vdemedes)
+Returns a `Promise` that resolved to a version string.

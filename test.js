@@ -1,20 +1,9 @@
-'use strict';
+import test from 'ava';
+import stableNodeVersion from './dist/index.js';
 
-/**
- * Dependencies
- */
-
-const stableNodeVersion = require('./');
-const test = require('ava');
-
-
-/**
- * Tests
- */
-
-test ('fetch stable version', t => {
-  return stableNodeVersion()
-    .then(function (version) {
-      t.is(version, '4.0.0');
-    });
+test('fetch stable version', async t => {
+	const version = await stableNodeVersion();
+	const parts = version.split('.');
+	t.is(parts.length, 3);
+	t.is(parts[0] % 2, 0);
 });
